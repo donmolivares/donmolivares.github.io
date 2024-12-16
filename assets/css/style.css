@@ -1,0 +1,379 @@
+*{padding: 0;
+margin: 0;
+box-sizing: 0; }
+
+body{
+    font-family:sans-serif;
+}
+
+nav,footer {
+    text-align: center;
+}
+
+.Grid-Master{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "buscar"
+    "main"
+    "footer";
+    min-height: 100vh;
+    grid-template-columns: 100%;
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgb(59, 59, 209);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+.Boton-hamburguesa{
+    color: white;
+}
+
+.barra-numeros{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.combobox{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    text-align:start;
+    padding-left: 10px;
+}
+
+.descripcion-foto
+{
+    text-align: center;
+}
+
+.caja-combo
+{
+
+    width: 90%;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.Grilla-muestra{
+    padding-top: 20px;    
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+}
+
+.tarjeta{
+    margin-top: 15px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid rgb(188, 180, 180);
+    box-shadow: 5px 5px rgb(246, 247, 247);
+    background-color: white;
+}
+
+.tarjeta-2{
+    margin-top: 15px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid rgb(188, 180, 180);
+    box-shadow: 5px 5px rgb(246, 247, 247);
+    background-color: white;
+    display: none;
+    }
+
+
+.imagen-tarjeta{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.ordenar{
+    background-color: rgb(234, 234, 234);
+    grid-area: buscar;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+    
+main{background-color: rgb(255, 255, 255);
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boton{
+    width: 200px;
+    color: white;
+    background-color: rgb(59, 59, 209);
+    height: 60px;
+    margin-top: 35px;
+}
+
+.boton_nros{
+    color: rgb(87, 59, 173);
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid #c3c4c3;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.boton_nros:hover {
+    background-color: #319872; /* Green */
+    color: white;
+  }
+
+footer{background-color: rgb(49, 49, 94);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    }
+
+.Iconos-Footer{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        width: 100%;
+    }
+
+.iconos{
+        padding: 10px;
+    }
+.text-ordenar
+{
+    padding: 10px;
+}
+    
+.Textos_Titulo{
+    color :white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.menu{
+    background-color: rgb(48, 48, 174);
+    color: white;
+    width: 100%;
+}
+
+.lista-menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    display: none;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.lista-menu li a{
+ text-decoration: none;
+ color: white;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+.Grid-Master{
+            grid-template-areas: 
+            "nav nav"
+            "buscar main"
+            "footer footer";
+            grid-template-columns: 25% auto;
+            min-height: 100vh;
+            }
+
+.tarjeta-2{
+    border: 0;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgb(188, 180, 180);
+        box-shadow: 5px 5px rgb(246, 247, 247);                
+        display: flex;
+    }
+            
+    
+.caja-combo
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                background-color: white;
+                text-align: center;
+                width: 400px;
+            }
+    
+.lista-menu{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                color: white;
+            
+             
+            }
+
+.lista-menu li {padding-right: 20px;
+}
+
+            
+nav{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+        color: white;
+    }
+    
+body {
+        background-color: white;
+    }
+    
+.Grilla-muestra{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20px;
+            
+ }
+    
+.tarjeta{border: 0;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgb(188, 180, 180);
+        box-shadow: 5px 5px rgb(246, 247, 247);
+
+}
+    
+.Boton-hamburguesa{
+        display: none;
+    }
+
+.ordenar{
+        background-color: rgb(234, 234, 234);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 20px;
+    }
+
+.caja-combo{
+    width: 140px;
+           }
+
+}
+
+
+
+
+@media (min-width: 992px) {
+.Grid-Master{
+            grid-template-areas: 
+            "nav buscar"
+            "nav main"
+            "footer main";
+            grid-template-columns: 25% auto;
+            min-height: 100vh;
+            background-color: white;}
+    
+.caja-combo
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                background-color: white;
+                text-align: center;
+                width: 400px;
+            }
+    
+.tarjeta-2{
+    border: 0;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(188, 180, 180);
+    box-shadow: 5px 5px rgb(246, 247, 247);
+    display: flex;
+          }
+            
+.lista-menu{
+                padding-top: 30px;
+                display: flex;
+                justify-content: start;
+                flex-direction: column;
+                color: white;
+            }
+    
+nav{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        color: white;
+        height: auto;
+
+    }
+    
+body {
+        background-color: white;
+    }
+    
+.Grilla-muestra{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 20px;
+    }
+    
+.tarjeta{border: 0;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgb(188, 180, 180);
+        box-shadow: 5px 5px rgb(246, 247, 247);
+    }
+    
+    .Boton-hamburguesa{
+        display: none;
+    }
+}
+    
+    
