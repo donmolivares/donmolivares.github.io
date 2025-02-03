@@ -1,0 +1,75 @@
+const propiedades_venta = [
+  {nombre: 'Propiedad el almendral1',src: './assets/img/casa_v_0.jfif', smoke: 'false', pets: 'true', ubicacion: 'Avda el Almendral S/N -  La Serena', habitaciones: '2', costo:'15.000.000', descripcion : 'Además, esta casa cuenta con 160 m2 de terreno y 85 m2 totales.'},
+  {nombre: 'Propiedad el Romero',src: './assets/img/casa_v_1.jfif', smoke: 'false', pets: 'false', ubicacion: 'Avda el Espino S/N -  La Serena', habitaciones: '2', costo:'11.000.000', descripcion : 'Además, esta casa cuenta con 350 m2 de terreno y 185 m2 totales.'},
+  {nombre: 'Propiedad el Romero',src: './assets/img/casa_v_2.jfif', smoke: 'false', pets: 'true', ubicacion: 'Avda el Tiro 178 -  La Serena', habitaciones: '2', costo:'9.000.000', descripcion : 'Además, esta casa cuenta con 11 m2 de terreno y 3 m2 totales.'},
+  {nombre: 'Propiedad el Vicuña',src: './assets/img/venta4.jpeg' , smoke: 'true', pets: 'true', ubicacion: 'Avda copaos Nro. 154 -  La Serena', habitaciones: '2', costo:'10.000.000', descripcion : 'Además, esta casa cuenta con 1160 m2 de terreno y 75 m2 totales.'}]
+
+  const propiedades_alquiler = [
+    {nombre: 'Propiedad Los Choros',src: './assets/img/arriendo1.jpg', smoke: 'true', pets: 'true', ubicacion: 'Avda el naranjo S/N -  La Serena', habitaciones: '2', costo:'400.000', descripcion : 'Además, esta casa cuenta con 540 m2 de terreno y 103 m2 totales.'},
+    {nombre: 'Propiedad el Romero', src: './assets/img/arriendo2.jpg', smoke: 'false', pets: 'false', ubicacion: 'Avda el arenal S/N -  La Serena', habitaciones: '3', costo:'500.000', descripcion : 'Además, esta casa cuenta con 8200 m2 de terreno y 102 m2 totales.'},
+    {nombre: 'Propiedad el Valero', src: './assets/img/arriendo3.jfif', smoke: 'false', pets: 'false', ubicacion: 'Avda el arco 888 -  Coquimbo', habitaciones: '3', costo:'500.000', descripcion : 'Además, esta casa cuenta con 200 m2 de terreno y 100 m2 totales.'},
+    {nombre: 'Propiedad el Vicuña', src: './assets/img/arriendo4.jpg', smoke: 'true', pets: 'true', ubicacion: 'Avda los rojos Nro. 1888 -  La Serena', habitaciones: '1', costo:'300.000', descripcion : 'Además, esta casa cuenta con 999 m2 de terreno y 101 m2 totales.'}]
+  
+  
+    const section = document.querySelector('.album_card')
+     
+    let count = 0;
+    let html = '';
+    
+    const citrus = propiedades_venta.slice(0, 3);
+    for(let propiedad of citrus){
+      if(count >= 0) count=5000; //Detiene el bucle despues de 3 libros
+
+      
+      /* Trate de hacerl el punto 4, pero no me salio creo que me falto preguntarlo en ayudantia */
+
+      let var1 = `${propiedad.pets}`
+      let si_pets = ''
+      if (var1===true) {
+        
+        let si_pets = 'Si Permite mascota';
+      } 
+      else {
+        let si_pets = 'No Permite mascota';
+      }
+
+      section.innerHTML += 
+      `<div class="card_ola" id=count>
+      <img src=${propiedad.src} class ='imagencasa'> </img>
+      <h4 class ='titulo-propiedades'>${propiedad.nombre}</h4>
+      <h4 class ='fuentes-simples'>${propiedad.descripcion}</h4>
+      <h4 class ='fuentes-simples'>${propiedad.ubicacion}</h4>
+      <h4 class ='fuentes-simples'>Permite Mascotas : ${propiedad.pets}</h4>
+      <h4 class ='fuentes-simples'>Permite Fumar : ${propiedad.smoke}</h4>
+      
+      <h4 class ='titulo-propiedades'> Valor : ${propiedad.costo}</h4>
+      </div>
+      `
+      count ++
+    }
+
+
+    const section2 = document.querySelector('.album_card_alquiler')
+
+    let count2 = 0;
+    const propiedades_alquiler2 = propiedades_alquiler.slice(0, 3);
+    for(let propiedad of propiedades_alquiler2){
+      if(count2 >= 3) count=5000; //Detiene el bucle despues de 3 libros
+
+      
+      section2.innerHTML += 
+      `<div class="card_ola" id=count>
+      <img src=${propiedad.src} class ='imagencasa'> </img>
+      <h4 class ='titulo-propiedades'>${propiedad.nombre}</h4>
+      <h4 class ='fuentes-simples'>${propiedad.descripcion}</h4>
+      <h4 class ='fuentes-simples'>${propiedad.ubicacion}</h4>
+      <h4 class ='fuentes-simples'>Permite Mascotas : ${propiedad.pets}</h4>
+      <h4 class ='fuentes-simples'>Permite Fumar : ${propiedad.smoke}</h4>
+      <h4 class ='titulo-propiedades'> Valor : ${propiedad.costo}</h4>
+  
+       
+      </div>
+      `
+      count2 ++
+    }
+  

@@ -1,0 +1,25 @@
+const propiedades_venta = [
+  {nombre: 'Propiedad el almendral1',src: './assets/img/casa_v_0.jfif', smoke: 'false', pets: 'true', ubicacion: 'Avda el Almendral S/N -  La Serena', habitaciones: '2', costo:'15.000.000', descripcion : 'Además, esta casa cuenta con 160 m2 de terreno y 85 m2 totales.'},
+  {nombre: 'Propiedad el Romero',src: './assets/img/casa_v_1.jfif', smoke: 'false', pets: 'true', ubicacion: 'Avda el Espino S/N -  La Serena', habitaciones: '2', costo:'11.000.000', descripcion : 'Además, esta casa cuenta con 350 m2 de terreno y 185 m2 totales.'},
+  {nombre: 'Propiedad el Romero',src: './assets/img/casa_v_2.jfif', smoke: 'false', pets: 'true', ubicacion: 'Avda el Tiro 178 -  La Serena', habitaciones: '2', costo:'9.000.000', descripcion : 'Además, esta casa cuenta con 11 m2 de terreno y 3 m2 totales.'},
+  {nombre: 'Propiedad el Vicuña',src: './assets/img/venta4.jpeg' , smoke: 'true', pets: 'true', ubicacion: 'Avda copaos Nro. 154 -  La Serena', habitaciones: '2', costo:'10.000.000', descripcion : 'Además, esta casa cuenta con 1160 m2 de terreno y 75 m2 totales.'}]
+
+    const section = document.querySelector('.album_card')
+     
+    let count = 0;
+    
+      for(let propiedad of propiedades_venta){
+      section.innerHTML += 
+      `<div class="card" id=count>
+      <img src=${propiedad.src} class ='imagencasa'> </img>
+      <h4 class ='titulo-propiedades'>${propiedad.nombre}</h4>
+      <h4 class ='fuentes-simples'>${propiedad.descripcion}</h4>
+      <h4 class ='fuentes-simples'>${propiedad.ubicacion}</h4>
+      <h4 class ='titulo-propiedades'> Valor : ${propiedad.costo}</h4>
+      </div>
+      `
+      count ++
+    }
+  
+
+    

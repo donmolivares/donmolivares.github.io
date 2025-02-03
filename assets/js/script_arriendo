@@ -1,0 +1,22 @@
+ const propiedades_alquiler = [
+    {nombre: 'Propiedad Los Choros',src: './assets/img/arriendo1.jpg', smoke: 'true', pets: 'true', ubicacion: 'Avda el naranjo S/N -  La Serena', habitaciones: '2', costo:'400.000', descripcion : 'Además, esta casa cuenta con 540 m2 de terreno y 103 m2 totales.'},
+    {nombre: 'Propiedad el Romero', src: './assets/img/arriendo2.jpg', smoke: 'false', pets: 'false', ubicacion: 'Avda el arenal S/N -  La Serena', habitaciones: '3', costo:'500.000', descripcion : 'Además, esta casa cuenta con 8200 m2 de terreno y 102 m2 totales.'},
+    {nombre: 'Propiedad el Valero', src: './assets/img/arriendo3.jfif', smoke: 'false', pets: 'false', ubicacion: 'Avda el arco 888 -  Coquimbo', habitaciones: '3', costo:'500.000', descripcion : 'Además, esta casa cuenta con 200 m2 de terreno y 100 m2 totales.'},
+    {nombre: 'Propiedad el Vicuña', src: './assets/img/arriendo4.jpg', smoke: 'true', pets: 'true', ubicacion: 'Avda los rojos Nro. 1888 -  La Serena', habitaciones: '1', costo:'300.000', descripcion : 'Además, esta casa cuenta con 999 m2 de terreno y 101 m2 totales.'}]
+
+    const section = document.querySelector('.album_card')
+     
+    let count = 0;
+    
+      for(let propiedad of propiedades_alquiler){
+      section.innerHTML += 
+      `<div class="card" id=count>
+      <img src=${propiedad.src} class ='imagencasa'> </img>
+      <h4 class ='titulo-propiedades'>${propiedad.nombre}</h4>
+      <h4 class ='fuentes-simples'>${propiedad.descripcion}</h4>
+      <h4 class ='fuentes-simples'>${propiedad.ubicacion}</h4>
+      <h4 class ='titulo-propiedades'> Valor : ${propiedad.costo}</h4>
+      </div>
+      `
+      count ++
+    }
