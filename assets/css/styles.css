@@ -1,0 +1,112 @@
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+h1{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
+.titulo{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    
+}
+h4{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.formulario-de-tareas
+{ 
+ margin: 15px;
+ padding: 20px;
+ display: flex;
+ justify-content: center;
+ border: 2px black solid;
+ flex-direction: column;
+ border-radius: 25px;
+}
+
+.cajatextyboton{ 
+    width: 640px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+.footer{ 
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+}
+
+.seccion{ 
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    width: 250px;
+}
+
+.contenedor-subtotalesylista{ 
+    width: 740px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    
+}
+
+#boton-agregar{ 
+ background-color: rgb(37, 83, 37);
+ border-radius: 5px;   
+ width: 150px;
+ height: 40px;
+ color: aliceblue;
+}
+
+#Nombre-tarea{ 
+    
+    border-radius: 5px;   
+    width: 350px;
+    height: 30px;
+    color: black;
+   }
+
+
+
+.muestratareas{ 
+    
+    width: 740px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+   
+
+.caja1{ 
+    width: 599px;
+    padding :20px;
+   }
+
+.caja2{ 
+    width: 200px;
+    padding :20px;
+   }
+   
+.nombre-tarea{ 
+    background-color: aqua;
+ }
+
+.boton-agregar{ 
+    width: 150px;
+   }
+
+   
