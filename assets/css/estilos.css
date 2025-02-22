@@ -1,0 +1,138 @@
+/*Paréntesis o "Paréntesis Redondos" ( )
+"Corchetes" o "paréntesis cuadrados" [ ]
+"Llaves" { }
+"Paréntesis angulares" < >
+*/
+
+body{ 
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav{ 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+main{ 
+    background-color: white;
+}
+
+
+.graficos{ 
+    background-color: rgb(240, 236, 236);
+    border-radius: 10px;
+    border: solid 1px green;
+    margin-top: 80px;
+    width: 800px;
+    text-align: center;
+}
+
+
+select{ 
+    font-size: 20px;
+    width: 280px;
+    text-align: center;
+    height: 40px;
+   
+}
+#valor_en_pesos{ 
+    font-size: 20px;
+    width: 280px;
+    text-align: center;
+    height: 40px;
+  }
+
+
+
+.valor_actual{ 
+    color: cornflowerblue;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: rows;
+    padding-top: 10px;
+    width: 300px;
+}
+
+.valor_final{ 
+    color: black;
+    background-color: azure;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+
+
+
+.card-convertidor{ 
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content:start;
+    align-items:center;
+    border-radius: 10px;
+    width: 400px;
+    height: 600px;
+    color: white;
+    flex-direction: column;
+    border: 2px rgb(201, 201, 201) solid;
+
+}
+
+
+
+.btn_buscar{ 
+    width: 150px;
+    height: 40px;
+    background-color: cornflowerblue;
+    margin: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#btn_buscar:hover { 
+
+    background-color: rgb(219, 219, 219);
+    cursor: pointer;
+    
+
+}
+
+.sec-parametros{ 
+    background-color: rgb(202, 201, 201);
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: black;
+    flex-direction: column;
+    width: 400px;
+    height: 550px
+
+}
+
+.logo{border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    padding-bottom: 15px;
+     }
+
+.titulo{color: darkgray;
+    font-size: 20px;
+    padding-left: 15px;
+         }
+
+    

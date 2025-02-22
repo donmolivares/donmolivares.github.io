@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisas</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="contebedor_principal">
+        <nav>
+            <img class = "logo" src="./assets/img/logo.png" alt="moneda">
+        </nav>
+
+        <main>
+            <div class="card-convertidor">
+                <div class="sec-titulo">
+                    <h1>Conversor de monedas</h1>
+                </div>
+                <div class="sec-parametros">
+                    <h1>Pesos CLP</h1>
+                    <input id="valor_en_pesos" type="text" placeholder="ingrese el monto en CLP">
+                    <h1>Moneda a convertir</h1>
+                    <select name="select" id="select">
+                        
+                    </select>
+                    
+                    <input class="btn_buscar" id="btn_buscar" type="button" value="Buscar">
+                    <div class="valor_actual">
+                        <h3>Valor al dia hoy : </h3>
+                        <h3 id="valor_divisa"></h3>
+                    </div>    
+
+                    <div class="valor_final">
+                        <h1 id="valor_total"></h1>
+                    </div> 
+                </div>
+            </div>
+        </main>
+    
+   
+        
+
+
+
+    </div>    
+    <div class="graficos">
+        <h1>Grafico de divisas</h1>
+        <div class="grafica">
+            <canvas id="myChart"></canvas>
+    </div>
+
+    <footer>
+
+        <div class="Textos_Titulo">@ 2025 Prueba APIs todos los derechos Marcelo Olivares</div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
