@@ -1,36 +1,30 @@
 import Header from "./Header"
-import Cardpizza from "./Cardpizza"
+import Cardpizza from "./Cardpizzas"
 
 const Home = () => {
     return(
     <>
         <Header/>
-        <div className="muestra-pizza">
+        <div className="muestra-pizzas">
         <Cardpizza
             name="Napolitana"
             price={5950}
             ingredients={["mozzarella", "tomates", "jamón", "orégano"]}
-            img="https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.co
-            m/o/pizzeria%2Fpizza-1239077_640_cl.jpg?alt=media&token=6a9a33da-5c00-49d4-9
-            080-784dcc87ec2c"
+            img="https://www.hola.com/horizon/landscape/e9e1e82cb873-pepperoni-pizza-abob-t.jpg?im=Resize=(960),type=downsize"
         />
 
         <Cardpizza
         name="Española"
         price={6950}
         ingredients={["mozzarella", "gorgonzola", "parmesano", "provolone"]}
-        img="https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.co
-        m/o/pizzeria%2Fcheese-164872_640_com.jpg?alt=media&token=18b2b821-4d0d-43f2
-        a1c6-8c57bc388fab"
+        img="https://www.hola.com/horizon/landscape/496fd62df2c2-adobestock84558936.jpg?im=Resize=(960),type=downsize"
         />
 
         <Cardpizza
         name="Pepperoni"
         price={6950}
         ingredients={["mozzarella", "pepperoni", "orégano"]}
-        img="https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.co
-        m/o/pizzeria%2Fpizza-1239077_640_com.jpg?alt=media&token=e7cde87a-08d5-4040
-        ac54-90f6c31eb3e3"
+        img="https://www.hola.com/horizon/landscape/4a221b0d688d-adobestock824722188.jpg?im=Resize=(960),type=downsize"
         />
         </div>
     </>

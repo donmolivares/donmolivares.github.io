@@ -1,94 +1,153 @@
-/*.Imagen_header{
-    background-image: url("/public/Header.jpg");
+body {
+  margin:0;
+  padding:0;
+  font-size: 10px;
+  
+  
+}
+.container-header{
+    width: 100%;
     height: 200px;
-    width: 800px;
- }*/
-
-  .container{
-    border: 1px solid rgb(120, 115, 115);
-    width: 1100px;
-    height: 200px;
-    overflow: hidden;
     position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+}
+
+.Formulario_Datos{
+  padding-top: 20px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(239, 244, 248);
+  
+  
+  
+}
+.casillas_ingresos{
+ width: 350px;
+ 
+ 
+
+}
+
+.titulo-login
+{
+  text-align: start;
+  padding-bottom: 30px;
+  
+ 
+ }
+
+.formato{
+  padding-top: 20px;
+  margin-top: 20px;
+  width: 50%;
+  height: 400px;
+  border: 1px solid rgb(133, 122, 122);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.texto-encima{
+        padding-top: 0px;
+        color: white;
+}
+.centrado{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+.imagen-header{
+    width: 100%;
+    height: 100%;
+ }
+
+.seccion-nombre-pizza{
+    width: 90%;
+    text-align: start;
+    color: rgb(133, 127, 127);
    }
 
-.container-footer{
+.flex-row{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content:space-around;
+  width: 100%;
+ }
+
+.container-footer{
   color: white;
+  padding: 0px;
   background-color: black;
-  flex-direction: column;
- border: 1px solid rgb(159, 155, 155);
-  width: 1100px;
-  height: 200px;
+  width: 100%;
+  height: 100px;
+ 
+  line-height: 0.0;
+  padding-top: 15px;
  }
 
  .button {
   background-color: #959595;
-  padding-left: 40px;
-  height: 10px;
-  border: none;
-  
-  color: rgb(53, 50, 50);
-  padding: 15px 32px;
+  margin-left: 10px;
+  width: 100px;
+  height: 30px;
   text-align: center;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
   font-size: 12px;
-  margin: 10px 2px;
   cursor: pointer;
 }
 
- .container-barra{
+.container-barra{
   display: flex;
   flex-direction: row;
   justify-content:space-between;
-
   color: white;
-  background-color: rgb(33, 31, 31);
-  border: 1px solid rgb(120, 115, 115);
-  width: 1100px;
+  background-color: rgb(49, 46, 56);
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
   height: 50px;
-  
-  
-  
+  font-size: 10px;
  }
 
 
- .imagen{
+ .imagen-pizza{
   padding-top: 20px;
   padding-bottom: 10px;
-  width: 200px;
-  height: 200px;
-  
-  
+  width: 300px;
+  height: 400px;
  }
 
- .muestra-pizza{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+ .session-ingredientes{
+  width: 100%;
+  border: 1px solid rgb(134, 134, 134);
+ }
+
+ .muestra-pizzas{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
   color: white;
-  background-color: rgb(245, 245, 245);
-
-  width: 1100px;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
+  background-color: rgb(252, 245, 223);
+  width: 100%;
+  height: 580px;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-left: 4px;
+  border: 1PX SOLID BLACK;
+  
  }
 
- .flex-row{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:space-around;  
-}
-
- .muestra-pizza2{
-  margin-top: 30px;
-  margin-bottom: 30px;
+ 
+.card-pizza{
+  margin: 10px;
+   
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,35 +156,37 @@
   background-color: rgb(245, 244, 244);
   border: 1px solid rgb(120, 115, 115);
   width: 350px;
-  height: 480px;
+  height: 500px;
   border-radius: 10px;
+  padding-bottom: 20px;
   
- }
+}
 
- .barra-derecho{
+.barra-derecho{
   display: flex;
-  justify-content:right;
+  justify-content:space-around;
   align-items: center;
-  margin-right: 50px;
-  
-  
- }
+  margin-right: 10px;
+}
 
- .total{
-  width: 50px;
- }
- 
+.total{
+  width: 80px;
+  font-size: 15px;
+  text-align: center;
+  color : rgb(111, 176, 222);
+  font-weight: 700;
+  margin-bottom: 5px;
+  
+}
 
- 
- .barra-izquierda{
+.barra-izquierda{
   display: flex;
   justify-content:start;
   align-items: center;
   padding-left: 10px;
-  
  }
 
- .p-blanco{font-size: 1rem;
+.p-blanco{font-size: 1rem;
  color: white;
  position: absolute;
  top: 60%;
