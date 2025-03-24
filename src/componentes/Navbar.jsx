@@ -1,8 +1,8 @@
 import '../assets/Style.css'
 
 const Navbar = () => {
-    const total = 25000;
-    const token = false;
+    const totales = 25000;
+    const token   = false;
     return (
         <div className="container-barra">
             <div className="barra-izquierda">
@@ -13,7 +13,7 @@ const Navbar = () => {
             </div>
             <div className="barra-derecho  text-info">
                 <h5>🛒 Total Ventas $</h5>
-                <input className="total" type="text" name="" id="" value={total}/>
+                <input className="total" type="text" name="" id="total-1" value={totales}/>
             </div>
 
         </div>

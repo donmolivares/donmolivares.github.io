@@ -125,10 +125,86 @@ body {
   height: 400px;
  }
 
+ .imagen_pizza_carrito{
+ 
+  width: 100px;
+  height: 100px;
+  padding-bottom: 5px;
+
+ }
+
  .session-ingredientes{
   width: 100%;
-  border: 1px solid rgb(134, 134, 134);
+  border: 1px solid rgb(204, 200, 200);
  }
+ .listado_pizzas{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  justify-content:start;
+  
+  color: black;
+  background-color: rgb(252, 245, 223);
+  width: 100%;
+  height: 100%;
+  border: 1PX SOLID BLACK;
+  
+ }
+
+
+ .nodo{
+  
+  width: 100%;
+  height: 100%;
+  
+ }
+
+ .nodo_sumaoresta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  
+  width: 150px;
+  height: 50px;
+ }
+
+ .botonessuma{
+  width: 120px;
+  height: 40px;
+  background-color: #667dc7;
+  text-align: center;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+ 
+  
+ }
+
+
+ .botonesresta{
+  width: 120px;
+  height: 40px;
+  background-color: #667dc7;
+  text-align: center;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+ 
+  
+ }
+
+ .cantidad{
+  width: 50px;
+  height: 30px;
+}
+
+
 
  .muestra-pizzas{
   display: grid;
@@ -136,7 +212,7 @@ body {
   color: white;
   background-color: rgb(252, 245, 223);
   width: 100%;
-  height: 580px;
+  height: 100%;
   align-items: center;
   padding-bottom: 20px;
   padding-left: 4px;
@@ -144,6 +220,12 @@ body {
   
  }
 
+ .cada_elemento_lista{
+ display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;  
+}
  
 .card-pizza{
   margin: 10px;
@@ -156,7 +238,7 @@ body {
   background-color: rgb(245, 244, 244);
   border: 1px solid rgb(120, 115, 115);
   width: 350px;
-  height: 500px;
+  height: 620px;
   border-radius: 10px;
   padding-bottom: 20px;
   

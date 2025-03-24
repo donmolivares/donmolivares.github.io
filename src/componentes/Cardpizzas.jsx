@@ -1,8 +1,10 @@
 import { Image } from "react-bootstrap"
 import '../assets/Style.css'
+import Home from "./Home"
 
 
 const Cardpizzas = ({name, ingredients, price,img}) => {
+
     return(
        <div className="card-pizza">
             <img className="imagen-pizza" src={img} alt={name}/>
@@ -11,7 +13,14 @@ const Cardpizzas = ({name, ingredients, price,img}) => {
             </div>
                 <div className="session-ingredientes">
                 <h3 style={{color:"#a49d9c"}}>Ingredientes</h3>
-                <p>🍕{ingredients[1]}, {ingredients[2]}, {ingredients[3]}</p>
+                {ingredients.map((ingrediente)=>(
+                  <ul>
+                    <li key={ingrediente}>{ingrediente}</li>
+                  </ul>  
+                )
+                )}
+
+<p>- </p>
             </div>
 
             <h3 style={{color:"black"}}>Precio $ : {price}</h3>
