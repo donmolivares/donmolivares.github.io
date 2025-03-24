@@ -19,17 +19,13 @@ function App() {
     <Navbar/>   
     <Header/>   
     
-     <Home/> {/*Hito 3 - Muestra pizza consulta pizzas.js*/}
-    {/* <Carrito/> {/*Hito 3 - Muestra Carrito pizzas.js Cart*/}
+     <Home/>        {/*Hito 3 - Muestra pizza consulta pizzas.js*/}
+    {/* <Carrito/>  {/*Hito 3 - Muestra Carrito pizzas.js Cart*/}
      
-
-
     {/* <Home/> */}         {/*Hito 1 - Muestra pizza */}
     {/* <Register/> */}     {/*Hito 2 - registro de usuarios*/}
     {/* <Login/>*/}         {/*Hito 2 - Login*/}
     <Footer/>
-    {/* Tu comentario va aquí */}
-      
     </>
   )
 }
