@@ -1,16 +1,31 @@
-import Cardpizza from "./Cardpizzas"
-import { pizzas  as bd_pizzas} from "../assets/datos/pizzas"
-import { useState } from "react"
+import Cardpizzas from "./Cardpizzas"
+import { useState,useEffect } from "react"
 
 const Home = () => {
-    const[pizzas,setPizzas]= useState(bd_pizzas)
+    const[info, setInfo]    = useState([]);
+    const url = 'http://localhost:5000/api/pizzas';          
+     useEffect(() => {
+            consultarInformacion(url);
+            console.log(info)
+     }, []);
+    
+    const consultarInformacion = (url) => {
+       fetch(url)
+       .then(response=>response.json())
+       .then(data => setInfo(data)); 
+    };
 
     return(
         <>
         <div className="muestra-pizzas">
-        {pizzas.map((pizza)=>(
-            <Cardpizza
-            key ={pizza.id}{...pizza}
+        {info.map((item,index)=>(
+            <Cardpizzas
+            name = {item.name}
+            desc = {item.desc}
+            ingredients= {item.ingredients}
+            price= {item.price}
+            img= {item.img}
+            key ={index}
             />
         ))}
         </div>   

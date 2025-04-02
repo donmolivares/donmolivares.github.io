@@ -1,15 +1,15 @@
-import { Image } from "react-bootstrap"
 import '../assets/Style.css'
-import Home from "./Home"
 
-
-const Cardpizzas = ({name, ingredients, price,img}) => {
+const Cardpizzas = ({name, desc, ingredients, price,img}) => {
 
     return(
        <div className="card-pizza">
             <img className="imagen-pizza" src={img} alt={name}/>
             <div className="seccion-nombre-pizza">
             <h2 className="nombre-pizza">{name}</h2>
+            <div className="session-ingredientes">
+                <p style={{color:"#a49d9c"}}>{desc}</p>
+            </div>
             </div>
                 <div className="session-ingredientes">
                 <h3 style={{color:"#a49d9c"}}>Ingredientes</h3>
@@ -20,7 +20,7 @@ const Cardpizzas = ({name, ingredients, price,img}) => {
                 )
                 )}
 
-<p>- </p>
+            <p>- </p>
             </div>
 
             <h3 style={{color:"black"}}>Precio $ : {price}</h3>
@@ -36,4 +36,3 @@ const Cardpizzas = ({name, ingredients, price,img}) => {
  }
 
  export default Cardpizzas
-

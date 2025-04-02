@@ -1,7 +1,16 @@
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2rem
+}
+
 body {
   margin:0;
   padding:0;
-  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 12px;
   
   
 }
@@ -77,6 +86,12 @@ body {
     color: rgb(133, 127, 127);
    }
 
+   .seccion-nombre-pizza-api{
+    width: 90%;
+    text-align: center;
+    color: rgb(133, 127, 127);
+   }
+
 .flex-row{
   display: flex;
   flex-direction: row;
@@ -135,7 +150,7 @@ body {
 
  .session-ingredientes{
   width: 100%;
-  border: 1px solid rgb(204, 200, 200);
+  
  }
  .listado_pizzas{
   padding: 20px;
@@ -238,9 +253,47 @@ body {
   background-color: rgb(245, 244, 244);
   border: 1px solid rgb(120, 115, 115);
   width: 350px;
-  height: 620px;
+  height: 710px;
   border-radius: 10px;
   padding-bottom: 20px;
+  
+}
+
+
+.lado-derecho-card-api{
+  margin: 10px;
+   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;  
+  color: rgb(149, 143, 143);
+}
+
+
+.centrar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;  
+  color: rgb(149, 143, 143);
+}
+
+.card-pizza-api{
+  margin: 10px;
+   
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;  
+  color: rgb(149, 143, 143);
+  background-color: rgb(245, 244, 244);
+  border: 1px solid rgb(223, 215, 215);
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  
   
 }
 
