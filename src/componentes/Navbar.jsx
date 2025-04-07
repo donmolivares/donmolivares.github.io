@@ -1,4 +1,5 @@
 import '../assets/Style.css'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const totales = 25000;
@@ -7,12 +8,34 @@ const Navbar = () => {
         <div className="container-barra">
             <div className="barra-izquierda">
                 <h5>Pizzería Mamma Mía !</h5>
-                <button class="button">🍕 Home</button>
-                <button class="button">🔐 Login</button>
-                <button class="button">🔐 Register</button>
+                
+        
+
+                <Link className="nav-link" aria-current="page" to="/">
+                <button type="button" class="btn btn-secondary">🍕 Home</button>
+                
+              </Link>
+              <Link className="nav-link" aria-current="page" to="/Login">
+              <button type="button" class="btn btn-secondary">🔐 Login</button>
+              
+              </Link>
+              <Link className="nav-link" aria-current="page" to="/Register">
+              <button type="button" class="btn btn-secondary pl-5">🔐 Register</button>
+            
+              </Link>
+                
+
+                
+                
+                
             </div>
             <div className="barra-derecho  text-info">
-                <h5>🛒 Total Ventas $</h5>
+                
+                <Link className="nav-link" aria-current="page" to="/Carrito">
+                  
+                   <button type="button" class="btn btn-secondary">🛒 Carrito</button>
+              </Link>
+              <h5> Total Ventas $</h5>
                 <input className="total" type="text" name="" id="total-1" value={totales}/>
             </div>
 

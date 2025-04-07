@@ -1,43 +1,43 @@
 import { useState } from 'react'
+import { Navigate, Route, Routes } from "react-router-dom";
 import './App.css'
 import Header from './componentes/Header' 
 import Navbar from './componentes/Navbar'
-import Home from './componentes/Home'
+import Notfound from './componentes/Notfound'
+import Profile from './componentes/Profile'
+import Home from './pages/Home'
 import Footer from './componentes/Footer'
-import Pizza from './componentes/Pizza'
-import Carrito from './componentes/Carrito'
-import Register from './componentes/Register'
-import Login from './componentes/Login'
+import Pizza from './pages/Pizza'
+import Carrito from './pages/Carrito'
+import Register from './pages/Register'
+import Login from './pages/Login'
+import Cardpizzas from './componentes/Cardpizzas';
 
 
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const userIsLogged = false;
   return (
     <>
-     {/*Revisando*/}
-    <Navbar/>   
-    <Header/>   
- 
- 
- 
-    <Home/>             {/*Hito 4 - Muestra pizza consulta pizzas.js*/}
-    {/*      <Pizza/>        {/*Hito 4 - Muestra pizza consulta pizzas.js*/}
-
-
-
-
-
-
-    {/* <Carrito/>  {/*Hito 3 - Muestra Carrito pizzas.js Cart*/}
-     
-    {/* <Home/> */}         {/*Hito 1 - Muestra pizza */}
-    {/* <Register/> */}     {/*Hito 2 - registro de usuarios*/}
-    {/* <Login/>*/}         {/*Hito 2 - Login*/}
-    <Footer/>
+      <div className="d-flex flex-column min-vh-100 justify-content-between">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/carrito" element={<Carrito/>} />
+          <Route path="/pizza" element={<Pizza/>} />
+       
+  
+          <Route path="/profile" element={<Profile/>} />
+          <Route path="*" element={<Notfound/>} />
+        </Routes>
+        <Footer />
+      </div>
     </>
-  )
+  );
 }
+
 
 export default App

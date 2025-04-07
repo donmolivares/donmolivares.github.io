@@ -1,4 +1,6 @@
 import '../assets/Style.css'
+import Pizza from '../pages/Pizza'
+import { Link } from "react-router-dom";
 
 const Cardpizzas = ({name, desc, ingredients, price,img}) => {
 
@@ -26,7 +28,11 @@ const Cardpizzas = ({name, desc, ingredients, price,img}) => {
             <h3 style={{color:"black"}}>Precio $ : {price}</h3>
             
             <div className="flex-row">
-                 <button class="btn btn-light">Ver mas 👀</button>
+            <Link className="nav-link" aria-current="page" to="/Pizza">
+                  
+              <button class="btn btn-light">Ver mas 👀</button>
+             </Link>
+                 
                 <button class="btn btn-secondary">Añadir 🛒</button>
 
             </div>

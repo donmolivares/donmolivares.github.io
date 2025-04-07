@@ -1,4 +1,4 @@
-import Cardpizzas from "./Cardpizzas"
+import Cardpizzas from "../componentes/Cardpizzas"
 import { useState,useEffect } from "react"
 
 const Home = () => {

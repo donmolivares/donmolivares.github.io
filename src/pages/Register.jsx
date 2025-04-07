@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Formulario from './Formulario'
+import Formulario from '../componentes/Formulario'
 
 
 
