@@ -1,0 +1,407 @@
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2rem
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 12px;
+  
+  
+}
+.container-header{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+}
+
+.Formulario_Datos{
+  padding-top: 20px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(239, 244, 248);
+  
+  
+  
+}
+
+
+.contenedor-profile{
+  padding-top: 20px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  background-color: rgb(201, 210, 218);
+  border-radius: 5%;
+  
+  
+  
+}
+.casillas_ingresos{
+ width: 350px;
+ 
+ 
+
+}
+
+.titulo-login
+{
+  text-align: start;
+  padding-bottom: 30px;
+  
+ 
+ }
+
+.formato{
+  padding-top: 20px;
+  margin-top: 20px;
+  width: 50%;
+  height: 400px;
+  border: 1px solid rgb(133, 122, 122);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.texto-encima{
+        padding-top: 0px;
+        color: white;
+}
+.centrado{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+.imagen-header{
+    width: 100%;
+    height: 100%;
+ }
+
+.seccion-nombre-pizza{
+    width: 90%;
+    text-align: start;
+    color: rgb(133, 127, 127);
+   }
+
+   .seccion-nombre-pizza-api{
+    width: 90%;
+    text-align: center;
+    color: rgb(133, 127, 127);
+   }
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  width: 100%;
+ }
+
+.container-footer{
+  color: white;
+  padding: 0px;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+ 
+  line-height: 0.0;
+  padding-top: 15px;
+ }
+
+ .button {
+  background-color: #959595;
+  margin-left: 10px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.container-barra{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  color: white;
+  background-color: rgb(49, 46, 56);
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 50px;
+  font-size: 10px;
+ }
+
+
+ .imagen-pizza{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 300px;
+  height: 400px;
+ }
+
+ .imagen_pizza_carrito{
+ 
+  width: 100px;
+  height: 100px;
+  padding-bottom: 5px;
+
+ }
+
+ .session-ingredientes{
+  width: 100%;
+  
+ }
+ .listado_pizzas{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  justify-content:start;
+  
+  color: rgb(10, 9, 9);
+  background-color: rgb(239, 244, 248);
+  width: 100%;
+  height: 100%;
+  border: 1PX SOLID rgb(173, 170, 170);
+  
+ }
+
+ .imagen-notfound{
+   width: 50%;
+  height: 50%;
+
+  border: 1PX SOLID rgb(173, 170, 170);
+  
+ }
+
+ .elemento-notfound{
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-color: rgb(239, 244, 248);
+
+ 
+}
+
+.boton-irinicio{
+  padding: 20px;
+   
+ }
+
+ .nodo{
+  
+  width: 100%;
+  height: 100%;
+  
+ }
+
+ .nodo_sumaoresta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  
+  width: 150px;
+  height: 50px;
+ }
+
+ .botonessuma{
+  width: 120px;
+  height: 40px;
+  background-color: #667dc7;
+  text-align: center;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+ 
+  
+ }
+
+
+ .botonesresta{
+  width: 120px;
+  height: 40px;
+  background-color: #667dc7;
+  text-align: center;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+ 
+  
+ }
+
+ .cantidad{
+  width: 50px;
+  height: 30px;
+}
+
+
+
+ .muestra-pizzas{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  color: white;
+  background-color: rgb(252, 245, 223);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-left: 4px;
+  border: 1PX SOLID BLACK;
+  
+ }
+
+ .cada_elemento_lista{
+ display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;  
+}
+ 
+.card-pizza{
+  margin: 10px;
+   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;  
+  color: rgb(149, 143, 143);
+  background-color: rgb(245, 244, 244);
+  border: 1px solid rgb(120, 115, 115);
+  width: 350px;
+  height: 710px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  
+}
+
+
+.lado-derecho-card-api{
+  margin: 10px;
+   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;  
+  color: rgb(149, 143, 143);
+}
+
+
+.centrar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;  
+  color: rgb(149, 143, 143);
+}
+
+.card-pizza-api{
+  margin: 10px;
+   
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;  
+  color: rgb(149, 143, 143);
+  background-color: rgb(245, 244, 244);
+  border: 1px solid rgb(223, 215, 215);
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  
+  
+}
+
+.barra-derecho{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 15px;
+  width: 350px;
+}
+
+.total{
+  width: 80px;
+  font-size: 15px;
+  text-align: center;
+  color : rgb(111, 176, 222);
+  font-weight: 700;
+  margin-bottom: 5px;
+  
+}
+
+.barra-izquierda{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding-left: 10px;
+ 
+  width: 550px;
+ }
+
+.p-blanco{font-size: 1rem;
+ color: white;
+ position: absolute;
+ top: 60%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-shadow: 0 0 8px black;
+}
+
+.ladoizquierdo-barra{font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px black;
+ }
+
+.container img{
+  width: 100%;
+ }
+
+.container p{
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px black;
+}
+
+h1{
+  font-size: 2.5rem;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px black;
+}
