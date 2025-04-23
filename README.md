@@ -1,12 +1,2 @@
-# React + Vite
+estimado diego va un archivo se llama "Api Backend de mi app le agregue un campo" que va el api que utilice en mi servidor de backend le agregue un campo de cantidad que necesitaba y todo ok. se lo adjunto por si lo requiere, pero me hace lo requerido en el taller 6, se conecta al backend y cumple con los puntos desafio 6.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
