@@ -26,7 +26,7 @@ const Home = () => {
         <div className="muestra-pizzas">
         {products.map((item,index)=>(
             <Cardpizzas
-            product = {item}
+            product = {{...item, quanty:1}}
                         />
         ))}
         </div>   
